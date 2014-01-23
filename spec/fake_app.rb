@@ -8,6 +8,7 @@ end
 # Run migrations
 project_root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 require File.join project_root, 'lib', 'generators', 'paul_revere', 'templates', 'migration'
+require File.join project_root, 'lib', 'generators', 'paul_revere', 'asset_generator'
 
 ActiveRecord::Base.establish_connection(
   :adapter  => "sqlite3",
